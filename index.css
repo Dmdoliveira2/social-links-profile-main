@@ -1,0 +1,142 @@
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: #2A2C2F;
+    font-family: "Inter", sans-serif;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.page {
+    background-color: #1F1F1F;
+    width: 384px;
+    height: 611px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+
+.page__avatar {
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    margin: 40px 148px 24px 148px;
+
+}
+
+.page__nome {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    border-color: black;
+    margin: 0 40px 4px 40px;
+}
+
+.page__description {
+    color: hsl(75, 94%, 57%);
+    margin: 0 40px 24px;
+}
+
+
+.page__bio {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin: 0 40px 24px
+}
+
+.page__links {
+    margin: 0 40px 40px;
+}
+
+.page__button {
+    text-decoration: none;
+    font-family: "inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+
+}
+
+.page__button:hover {
+    background-color: hsl(75, 94%, 57%);
+}
+
+
+.page__button-text:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: #1F1F1F;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.page__button-text {
+    width: 315px;
+    height: 45px;
+    background-color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .container {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .page {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+
+    }
+
+    .page__nome {
+        font-size: 25px;
+    }
+    .page__button-text {
+        width: 280px;
+        max-width: auto;
+
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
